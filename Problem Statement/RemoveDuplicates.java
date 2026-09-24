@@ -11,14 +11,14 @@ public class RemoveDuplicates {
             arr[i] = sc.nextInt();
     }
       for (int i = 0; i < n; i++) {
-         boolean Duplicate = false;
+        int count = 1;
         for(int j = 0; j < i; j++){
             if(arr[i] == arr[j]){
-                Duplicate = true;
+                count++;
             }
 
         }
-        if(!Duplicate){
+        if(count == 1){
         System.out.print(arr[i] + " ");
         }
 }
